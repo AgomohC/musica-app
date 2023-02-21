@@ -8,6 +8,7 @@
 	left: calc(6rem + 1px);
 	width: calc(100% - 6rem - 1px);
 	z-index: 9;
+	@include flex(row, center, flex-start, 0);
 	@include mobile {
 		width: 100%;
 		left: 0;

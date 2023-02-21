@@ -11,6 +11,13 @@ html {
 	box-sizing: border-box;
 	color: $white-color;
 }
-
-footer {
+input {
+	width: 100%;
+	background: transparent;
+	border: none;
+	outline: none;
+	&:focus {
+		border: none;
+		outline: none;
+	}
 }
