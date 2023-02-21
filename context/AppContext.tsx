@@ -13,7 +13,7 @@ export const AppContext = createContext<initialAppState>({
 	...initialState,
 })
 
-export const DashboardProvider = ({ children }: { children: JSX.Element | JSX.Element[] }) => {
+export const AppProvider = ({ children }: { children: JSX.Element | JSX.Element[] }) => {
 	const [state, dispatch] = useReducer(AppReducer, initialState)
 
 	// Action creators go here

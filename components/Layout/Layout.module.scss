@@ -1,0 +1,14 @@
+@import "../../styles/variables";
+@import "../../styles/mixin";
+
+.layout {
+	margin-top: 4.5625rem;
+	margin-left: 6rem;
+	margin-bottom: 7.8125rem;
+	position: relative;
+	z-index: 8;
+	@include mobile {
+		width: 100%;
+		margin-left: 0;
+	}
+}

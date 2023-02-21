@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+@import "../../styles/mixin";
+
+.header {
+	position: fixed;
+	top: 0;
+	height: 4.5625rem;
+	left: calc(6rem + 1px);
+	width: calc(100% - 6rem - 1px);
+	z-index: 9;
+	@include mobile {
+		width: 100%;
+		left: 0;
+	}
+}
