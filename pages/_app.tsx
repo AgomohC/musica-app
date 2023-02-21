@@ -5,7 +5,7 @@ import Footer from "../components/Footer/Footer"
 import "../styles/globals.scss"
 import { AppProvider } from "../context/AppContext"
 import { Quicksand } from "@next/font/google"
-import Layout from "../components/Layout/Layout"
+import Layout from "../components/UI/Layout/Layout"
 
 const quicksand = Quicksand({
 	subsets: ["latin"],
