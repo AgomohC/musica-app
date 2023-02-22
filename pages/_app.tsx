@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }: AppProps) {
 		<AppProvider>
 			<Header className={`${quicksand.variable} font-sans`} />
 			<Sidebar className={`${quicksand.variable} font-sans`} />
-			<Layout>
+			<Layout className={`${quicksand.variable} font-sans`}>
 				<Component {...pageProps} />
 			</Layout>
 			<Footer className={`${quicksand.variable} font-sans`} />

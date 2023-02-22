@@ -16,3 +16,8 @@
 		@content;
 	}
 }
+@mixin md-screen {
+	@media screen and (max-width: $medium-screen) {
+		@content;
+	}
+}
