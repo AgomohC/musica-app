@@ -57,18 +57,25 @@ export const getServerSideProps: GetServerSideProps<{
 		popular: Track[]
 	}
 }> = async context => {
-	const playlist_promise = await axios("https://musica-api.up.railway.app/playlist")
-	const playlist = playlist_promise?.data
+	try {
+		const playlist_promise = await axios("https://musica-api.up.railway.app/playlist")
+		const playlist = playlist_promise?.data
 
-	const new_t_promise = await axios("https://musica-api.up.railway.app/new")
-	const new_t = new_t_promise?.data
+		const new_t_promise = await axios("https://musica-api.up.railway.app/new")
+		const new_t = new_t_promise?.data
 
-	const popular_promise = await axios("https://musica-api.up.railway.app/popular")
-	const popular = popular_promise?.data
-
-	return {
-		props: {
-			data: { playlist, new_t, popular },
-		},
+		const popular_promise = await axios("https://musica-api.up.railway.app/popular")
+		const popular = popular_promise?.data
+		return {
+			props: {
+				data: { playlist, new_t, popular },
+			},
+		}
+	} catch (error) {
+		return {
+			props: {
+				data: { playlist: [], new_t: [], popular: [] },
+			},
+		}
 	}
 }
