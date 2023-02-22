@@ -7,10 +7,25 @@
 	height: 4.5625rem;
 	left: calc(6rem + 1px);
 	width: calc(100% - 6rem - 1px);
+	padding: 0 1.6875rem;
 	z-index: 9;
 	@include flex(row, center, flex-start, 0);
 	@include mobile {
 		width: 100%;
 		left: 0;
+		justify-content: space-between;
+	}
+	&__menubtn {
+		aspect-ratio: 1/1;
+		@include tablet {
+			display: none;
+		}
+	}
+	&__logobtn {
+		aspect-ratio: 1/1;
+		cursor: pointer;
+		@include tablet {
+			display: none;
+		}
 	}
 }
