@@ -11,6 +11,7 @@ html {
 	box-sizing: border-box;
 	color: $white-color;
 }
+
 input {
 	width: 100%;
 	background: transparent;
@@ -20,4 +21,9 @@ input {
 		border: none;
 		outline: none;
 	}
+}
+
+a {
+	text-decoration: none;
+	cursor: pointer;
 }

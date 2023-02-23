@@ -7,8 +7,9 @@
 	height: 4.5625rem;
 	left: calc(6rem + 1px);
 	width: calc(100% - 6rem - 1px);
-	padding: 0 1.6875rem;
+	padding: 0 1.75rem;
 	z-index: 9;
+	background: $background-color-md;
 	@include flex(row, center, flex-start, 0);
 	@include mobile {
 		width: 100%;
@@ -17,6 +18,7 @@
 	}
 	&__menubtn {
 		aspect-ratio: 1/1;
+		cursor: pointer;
 		@include tablet {
 			display: none;
 		}
