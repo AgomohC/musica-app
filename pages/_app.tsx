@@ -6,7 +6,7 @@ import "../styles/globals.scss"
 import { AppProvider } from "../context/AppContext"
 import { Quicksand } from "@next/font/google"
 import Layout from "../components/UI/Layout/Layout"
-
+import MobileNav from "../components/MobileNav/MobileNav"
 const quicksand = Quicksand({
 	subsets: ["latin"],
 	variable: "--font-quicksand",
@@ -17,6 +17,7 @@ export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<AppProvider>
 			<Header className={`${quicksand.variable} font-sans`} />
+			<MobileNav className={`${quicksand.variable} font-sans`} />
 			<Sidebar className={`${quicksand.variable} font-sans`} />
 			<Layout className={`${quicksand.variable} font-sans`}>
 				<Component {...pageProps} />

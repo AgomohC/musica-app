@@ -1,6 +1,7 @@
 import { useContext, useReducer, createContext, Dispatch } from "react"
 import { AppReducer } from "./AppReducer"
 import { initialAppState, ActionPayload, ActionCreator } from "./context-types"
+import info from "../public/assets.json"
 
 const initialState: initialAppState = {
 	pending: false,
@@ -8,9 +9,9 @@ const initialState: initialAppState = {
 	error_message: "",
 	isSideBarOpen: false,
 	isSearchModalOpen: false,
-	all_playlists: [],
-	all_new_tracks: [],
-	all_popular_tracks: [],
+	all_playlists: info.playlist,
+	all_new_tracks: info.new,
+	all_popular_tracks: info.popular,
 }
 export const AppContext = createContext<{
 	state: initialAppState

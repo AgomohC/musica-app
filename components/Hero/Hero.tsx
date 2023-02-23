@@ -6,6 +6,7 @@ import bannerMobile from "/public/HeroSectionMobile.png"
 import Heart from "/public/icons/Heart.svg"
 import { useLocalContext } from "../../context/AppContext"
 import { totalTimeString } from "../../helpers/add-time"
+import Link from "next/link"
 
 interface IPropTypes {
 	className?: string
@@ -59,7 +60,9 @@ const Hero = ({ className }: IPropTypes) => {
 												/>
 											</div>
 											<div className={classes.banner__playlistInfo}>
-												<h6>{item.title}</h6>
+												<Link href={`/playlists/${item.id}`}>
+													<h6>{item.title}</h6>
+												</Link>
 												<p>{artist}</p>
 												<p>{total}</p>
 											</div>

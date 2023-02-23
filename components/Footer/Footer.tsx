@@ -2,7 +2,7 @@ import classes from "./Footer.module.scss"
 import classNames from "classnames"
 
 interface IPropTypes {
-	className: string
+	className?: string
 }
 const Footer = ({ className }: IPropTypes) => {
 	const clsx = classNames(className, classes.footer)

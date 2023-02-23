@@ -1,0 +1,465 @@
+{
+	"popular": [
+		{
+			"id": 116348656,
+			"artist": "The Beatles",
+			"title": "Let It Be",
+			"audio": "https://cdns-preview-e.dzcdn.net/stream/c-e7e6e2142422aa4599294dee57197be9-13.mp3",
+			"cover": "https://e-cdns-images.dzcdn.net/images/cover/fcf05300b7c17ec77a6d01028a4bef61/500x500-000000-80-0-0.jpg",
+			"duration": "4:03"
+		},
+		{
+			"id": 116348464,
+			"artist": "The Beatles",
+			"title": "Here Comes The Sun",
+			"audio": "https://cdns-preview-5.dzcdn.net/stream/c-5503df16eade59c9031bab1d4152c09f-11.mp3",
+			"cover": "https://e-cdns-images.dzcdn.net/images/cover/aa94ab293730bb7845d2aa8c672b2c29/500x500-000000-80-0-0.jpg",
+			"duration": "3:05"
+		},
+		{
+			"id": 116348128,
+			"artist": "The Beatles",
+			"title": "Come Together",
+			"audio": "https://cdns-preview-4.dzcdn.net/stream/c-4c92fc2bfba2157de13ed654ea354020-9.mp3",
+			"cover": "https://e-cdns-images.dzcdn.net/images/cover/32b6b5174e633cd6d182d00024dddcb5/500x500-000000-80-0-0.jpg",
+			"duration": "4:19"
+		},
+		{
+			"id": 727720,
+			"artist": "America",
+			"title": "A Horse with No Name",
+			"audio": "https://cdns-preview-6.dzcdn.net/stream/c-6de7749102160a36f8ab4b6c4f55d455-10.mp3",
+			"cover": "https://e-cdns-images.dzcdn.net/images/cover/90758014c42242478ba9a7a6e33dcff5/500x500-000000-80-0-0.jpg",
+			"duration": "4:12"
+		},
+		{
+			"id": 732851,
+			"artist": "America",
+			"title": "Lonely People",
+			"audio": "https://cdns-preview-d.dzcdn.net/stream/c-d9819b7fee739acd82a06641815c90ac-10.mp3",
+			"cover": "https://e-cdns-images.dzcdn.net/images/cover/7f8c81e6882f107c6fce6bbb9079d781/500x500-000000-80-0-0.jpg",
+			"duration": "2:30"
+		},
+		{
+			"id": 1988270837,
+			"artist": "Rihanna",
+			"title": "Lift Me Up",
+			"audio": "https://cdns-preview-0.dzcdn.net/stream/c-0c43e5237f9b36b0dad5f96e894af372-4.mp3",
+			"cover": "https://e-cdns-images.dzcdn.net/images/cover/99a8eb360d6b04b1f9b8c205c22ae88d/500x500-000000-80-0-0.jpg",
+			"duration": "3:16"
+		},
+		{
+			"id": 925106,
+			"artist": "Rihanna",
+			"title": "Umbrella",
+			"audio": "https://cdns-preview-3.dzcdn.net/stream/c-3b1142ec5a98567c5d286a9050a85d1e-6.mp3",
+			"cover": "https://e-cdns-images.dzcdn.net/images/cover/91276466fbc876d96be9e6926060af60/500x500-000000-80-0-0.jpg",
+			"duration": "4:35"
+		},
+		{
+			"id": 62376291,
+			"artist": "Rihanna",
+			"title": "Stay",
+			"audio": "https://cdns-preview-2.dzcdn.net/stream/c-2a11d7ebc8a3f7f4245c6915bafbd241-7.mp3",
+			"cover": "https://e-cdns-images.dzcdn.net/images/cover/246fb21e05da3d1460eb147123bb906b/500x500-000000-80-0-0.jpg",
+			"duration": "3:00"
+		},
+		{
+			"id": 1842063487,
+			"artist": "Beyonc\u00e9",
+			"title": "CUFF IT",
+			"audio": "https://cdns-preview-6.dzcdn.net/stream/c-60db3f7f3d6a419da5c582d9b7b53506-3.mp3",
+			"cover": "https://e-cdns-images.dzcdn.net/images/cover/c3e2a951678a28a3f541a69c866583d4/500x500-000000-80-0-0.jpg",
+			"duration": "3:45"
+		},
+		{
+			"id": 609244,
+			"artist": "Beyonc\u00e9 (feat. Jay-Z)",
+			"title": "Crazy In Love",
+			"audio": "https://cdns-preview-f.dzcdn.net/stream/c-f5ecd6528459f97a68077d10a7d626e9-8.mp3",
+			"cover": "https://e-cdns-images.dzcdn.net/images/cover/1ea1a631aa5235bbd0063643beb96fa8/500x500-000000-80-0-0.jpg",
+			"duration": "3:56"
+		}
+	],
+	"new": [
+		{
+			"id": 116348734,
+			"artist": "The Beatles",
+			"title": "All You Need Is Love",
+			"audio": "https://cdns-preview-2.dzcdn.net/stream/c-2cbea4cbaf6cc54b8bd66dcaaa2b59c9-7.mp3",
+			"cover": "https://e-cdns-images.dzcdn.net/images/cover/c105ffd0f6855c565cd3a0be47a1ee31/500x500-000000-80-0-0.jpg",
+			"duration": "3:51"
+		},
+		{
+			"id": 116348624,
+			"artist": "The Beatles",
+			"title": "Penny Lane",
+			"audio": "https://cdns-preview-e.dzcdn.net/stream/c-e3ace3b99555b4a5383102d86012cbdf-8.mp3",
+			"cover": "https://e-cdns-images.dzcdn.net/images/cover/c65b3bd84e81056e060be144381c06c8/500x500-000000-80-0-0.jpg",
+			"duration": "3:00"
+		},
+		{
+			"id": 729597952,
+			"artist": "America",
+			"title": "You Can Do Magic",
+			"audio": "https://cdns-preview-a.dzcdn.net/stream/c-a6e6f2155c8b43d92f4f77e64b6a7d5b-6.mp3",
+			"cover": "https://e-cdns-images.dzcdn.net/images/cover/53ef91a1552643a512958611c37d01cc/500x500-000000-80-0-0.jpg",
+			"duration": "3:55"
+		},
+		{
+			"id": 727754,
+			"artist": "America",
+			"title": "Tin Man",
+			"audio": "https://cdns-preview-8.dzcdn.net/stream/c-8cf70863a2ca09279ad60123155ab738-8.mp3",
+			"cover": "https://e-cdns-images.dzcdn.net/images/cover/90758014c42242478ba9a7a6e33dcff5/500x500-000000-80-0-0.jpg",
+			"duration": "3:29"
+		},
+		{
+			"id": 727738,
+			"artist": "America",
+			"title": "Don't Cross the River",
+			"audio": "https://cdns-preview-d.dzcdn.net/stream/c-d94c0dcdb37faf69bf7faad789f14f76-8.mp3",
+			"cover": "https://e-cdns-images.dzcdn.net/images/cover/90758014c42242478ba9a7a6e33dcff5/500x500-000000-80-0-0.jpg",
+			"duration": "2:29"
+		},
+		{
+			"id": 13529563,
+			"artist": "Rihanna",
+			"title": "Only Girl (In The World)",
+			"audio": "https://cdns-preview-d.dzcdn.net/stream/c-d20ea30267f84d42b66c6aa61c3aa43c-10.mp3",
+			"cover": "https://e-cdns-images.dzcdn.net/images/cover/3a12c64bb52a167944783878ffe41f02/500x500-000000-80-0-0.jpg",
+			"duration": "3:55"
+		},
+		{
+			"id": 14525573,
+			"artist": "Rihanna",
+			"title": "Where Have You Been",
+			"audio": "https://cdns-preview-7.dzcdn.net/stream/c-70eb82ab241f9ed6f5a22ed1fa958ad3-9.mp3",
+			"cover": "https://e-cdns-images.dzcdn.net/images/cover/5199f89d5113a83b5086463d5d0c9415/500x500-000000-80-0-0.jpg",
+			"duration": "4:02"
+		},
+		{
+			"id": 2485118,
+			"artist": "Beyonc\u00e9",
+			"title": "Single Ladies (Put a Ring on It)",
+			"audio": "https://cdns-preview-b.dzcdn.net/stream/c-b844f52cb55a5d993a3daf4be4b0d069-5.mp3",
+			"cover": "https://e-cdns-images.dzcdn.net/images/cover/1f0450a010b5a825194d7ca00b3067ab/500x500-000000-80-0-0.jpg",
+			"duration": "3:13"
+		},
+		{
+			"id": 13139151,
+			"artist": "Beyonc\u00e9",
+			"title": "Beautiful Liar",
+			"audio": "https://cdns-preview-6.dzcdn.net/stream/c-6bc698380b2f1a46767ef90a995a073f-7.mp3",
+			"cover": "https://e-cdns-images.dzcdn.net/images/cover/d4761825eca7fb9810da3b4af0efe7eb/500x500-000000-80-0-0.jpg",
+			"duration": "3:21"
+		},
+		{
+			"id": 66190255,
+			"artist": "Beyonc\u00e9",
+			"title": "Love On Top",
+			"audio": "https://cdns-preview-4.dzcdn.net/stream/c-4e36067b451efc0153f588540407d7a4-4.mp3",
+			"cover": "https://e-cdns-images.dzcdn.net/images/cover/bc927a6b67e8a16351a3de87ba94328c/500x500-000000-80-0-0.jpg",
+			"duration": "4:25"
+		}
+	],
+	"playlist": [
+		{
+			"id": "1",
+			"title": "Femto Playlist",
+			"cover": "https://e-cdns-images.dzcdn.net/images/cover/d4761825eca7fb9810da3b4af0efe7eb/500x500-000000-80-0-0.jpg",
+			"info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo non dolore neque doloremque, repudiandae sunt, vero excepturi possimus deserunt aliquid dignissimos, ex fuga aperiam tempora saepe. Soluta voluptas assumenda reprehenderit!",
+			"files": [
+				{
+					"id": "727738",
+					"artist": "America",
+					"title": "Don't Cross the River",
+					"audio": "https://cdns-preview-d.dzcdn.net/stream/c-d94c0dcdb37faf69bf7faad789f14f76-8.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/90758014c42242478ba9a7a6e33dcff5/500x500-000000-80-0-0.jpg",
+					"duration": "2:29"
+				},
+				{
+					"id": "13529563",
+					"artist": "Rihanna",
+					"title": "Only Girl (In The World)",
+					"audio": "https://cdns-preview-d.dzcdn.net/stream/c-d20ea30267f84d42b66c6aa61c3aa43c-10.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/3a12c64bb52a167944783878ffe41f02/500x500-000000-80-0-0.jpg",
+					"duration": "3:55"
+				},
+				{
+					"id": "14525573",
+					"artist": "Rihanna",
+					"title": "Where Have You Been",
+					"audio": "https://cdns-preview-7.dzcdn.net/stream/c-70eb82ab241f9ed6f5a22ed1fa958ad3-9.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/5199f89d5113a83b5086463d5d0c9415/500x500-000000-80-0-0.jpg",
+					"duration": "4:02"
+				},
+				{
+					"id": "2485118",
+					"artist": "Beyonc\u00e9",
+					"title": "Single Ladies (Put a Ring on It)",
+					"audio": "https://cdns-preview-b.dzcdn.net/stream/c-b844f52cb55a5d993a3daf4be4b0d069-5.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/1f0450a010b5a825194d7ca00b3067ab/500x500-000000-80-0-0.jpg",
+					"duration": "3:13"
+				},
+				{
+					"id": 13139151,
+					"artist": "Beyonc\u00e9",
+					"title": "Beautiful Liar",
+					"audio": "https://cdns-preview-6.dzcdn.net/stream/c-6bc698380b2f1a46767ef90a995a073f-7.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/d4761825eca7fb9810da3b4af0efe7eb/500x500-000000-80-0-0.jpg",
+					"duration": "3:21"
+				},
+				{
+					"id": 66190255,
+					"artist": "Beyonc\u00e9",
+					"title": "Love On Top",
+					"audio": "https://cdns-preview-4.dzcdn.net/stream/c-4e36067b451efc0153f588540407d7a4-4.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/bc927a6b67e8a16351a3de87ba94328c/500x500-000000-80-0-0.jpg",
+					"duration": "4:25"
+				}
+			]
+		},
+		{
+			"id": "2",
+			"title": "Sakamoto Playlist",
+			"cover": "https://e-cdns-images.dzcdn.net/images/cover/fcf05300b7c17ec77a6d01028a4bef61/500x500-000000-80-0-0.jpg",
+			"info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo non dolore neque doloremque, repudiandae sunt, vero excepturi possimus deserunt aliquid dignissimos, ex fuga aperiam tempora saepe. Soluta voluptas assumenda reprehenderit!",
+			"files": [
+				{
+					"id": 116348656,
+					"artist": "The Beatles",
+					"title": "Let It Be",
+					"audio": "https://cdns-preview-e.dzcdn.net/stream/c-e7e6e2142422aa4599294dee57197be9-13.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/fcf05300b7c17ec77a6d01028a4bef61/500x500-000000-80-0-0.jpg",
+					"duration": "4:03"
+				},
+				{
+					"id": 116348464,
+					"artist": "The Beatles",
+					"title": "Here Comes The Sun",
+					"audio": "https://cdns-preview-5.dzcdn.net/stream/c-5503df16eade59c9031bab1d4152c09f-11.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/aa94ab293730bb7845d2aa8c672b2c29/500x500-000000-80-0-0.jpg",
+					"duration": "3:05"
+				},
+				{
+					"id": 116348128,
+					"artist": "The Beatles",
+					"title": "Come Together",
+					"audio": "https://cdns-preview-4.dzcdn.net/stream/c-4c92fc2bfba2157de13ed654ea354020-9.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/32b6b5174e633cd6d182d00024dddcb5/500x500-000000-80-0-0.jpg",
+					"duration": "4:19"
+				},
+				{
+					"id": 727720,
+					"artist": "America",
+					"title": "A Horse with No Name",
+					"audio": "https://cdns-preview-6.dzcdn.net/stream/c-6de7749102160a36f8ab4b6c4f55d455-10.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/90758014c42242478ba9a7a6e33dcff5/500x500-000000-80-0-0.jpg",
+					"duration": "4:12"
+				},
+				{
+					"id": 732851,
+					"artist": "America",
+					"title": "Lonely People",
+					"audio": "https://cdns-preview-d.dzcdn.net/stream/c-d9819b7fee739acd82a06641815c90ac-10.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/7f8c81e6882f107c6fce6bbb9079d781/500x500-000000-80-0-0.jpg",
+					"duration": "2:30"
+				},
+				{
+					"id": 1988270837,
+					"artist": "Rihanna",
+					"title": "Lift Me Up",
+					"audio": "https://cdns-preview-0.dzcdn.net/stream/c-0c43e5237f9b36b0dad5f96e894af372-4.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/99a8eb360d6b04b1f9b8c205c22ae88d/500x500-000000-80-0-0.jpg",
+					"duration": "3:16"
+				}
+			]
+		},
+		{
+			"id": "3",
+			"title": "Darkseid Playlist",
+			"cover": "https://e-cdns-images.dzcdn.net/images/cover/90758014c42242478ba9a7a6e33dcff5/500x500-000000-80-0-0.jpg",
+			"info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo non dolore neque doloremque, repudiandae sunt, vero excepturi possimus deserunt aliquid dignissimos, ex fuga aperiam tempora saepe. Soluta voluptas assumenda reprehenderit!",
+			"files": [
+				{
+					"id": 116348656,
+					"artist": "The Beatles",
+					"title": "Let It Be",
+					"audio": "https://cdns-preview-e.dzcdn.net/stream/c-e7e6e2142422aa4599294dee57197be9-13.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/fcf05300b7c17ec77a6d01028a4bef61/500x500-000000-80-0-0.jpg",
+					"duration": "4:03"
+				},
+				{
+					"id": 116348464,
+					"artist": "The Beatles",
+					"title": "Here Comes The Sun",
+					"audio": "https://cdns-preview-5.dzcdn.net/stream/c-5503df16eade59c9031bab1d4152c09f-11.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/aa94ab293730bb7845d2aa8c672b2c29/500x500-000000-80-0-0.jpg",
+					"duration": "3:05"
+				},
+				{
+					"id": 727720,
+					"artist": "America",
+					"title": "A Horse with No Name",
+					"audio": "https://cdns-preview-6.dzcdn.net/stream/c-6de7749102160a36f8ab4b6c4f55d455-10.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/90758014c42242478ba9a7a6e33dcff5/500x500-000000-80-0-0.jpg",
+					"duration": "4:12"
+				},
+				{
+					"id": 732851,
+					"artist": "America",
+					"title": "Lonely People",
+					"audio": "https://cdns-preview-d.dzcdn.net/stream/c-d9819b7fee739acd82a06641815c90ac-10.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/7f8c81e6882f107c6fce6bbb9079d781/500x500-000000-80-0-0.jpg",
+					"duration": "2:30"
+				},
+				{
+					"id": 116348734,
+					"artist": "The Beatles",
+					"title": "All You Need Is Love",
+					"audio": "https://cdns-preview-2.dzcdn.net/stream/c-2cbea4cbaf6cc54b8bd66dcaaa2b59c9-7.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/c105ffd0f6855c565cd3a0be47a1ee31/500x500-000000-80-0-0.jpg",
+					"duration": "3:51"
+				},
+				{
+					"id": 116348624,
+					"artist": "The Beatles",
+					"title": "Penny Lane",
+					"audio": "https://cdns-preview-e.dzcdn.net/stream/c-e3ace3b99555b4a5383102d86012cbdf-8.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/c65b3bd84e81056e060be144381c06c8/500x500-000000-80-0-0.jpg",
+					"duration": "3:00"
+				},
+
+				{
+					"id": 727754,
+					"artist": "America",
+					"title": "Tin Man",
+					"audio": "https://cdns-preview-8.dzcdn.net/stream/c-8cf70863a2ca09279ad60123155ab738-8.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/90758014c42242478ba9a7a6e33dcff5/500x500-000000-80-0-0.jpg",
+					"duration": "3:29"
+				}
+			]
+		},
+		{
+			"id": "4",
+			"title": "Morty Playlist",
+			"cover": "https://e-cdns-images.dzcdn.net/images/cover/5199f89d5113a83b5086463d5d0c9415/500x500-000000-80-0-0.jpg",
+			"info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo non dolore neque doloremque, repudiandae sunt, vero excepturi possimus deserunt aliquid dignissimos, ex fuga aperiam tempora saepe. Soluta voluptas assumenda reprehenderit!",
+			"files": [
+				{
+					"id": 727720,
+					"artist": "America",
+					"title": "A Horse with No Name",
+					"audio": "https://cdns-preview-6.dzcdn.net/stream/c-6de7749102160a36f8ab4b6c4f55d455-10.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/90758014c42242478ba9a7a6e33dcff5/500x500-000000-80-0-0.jpg",
+					"duration": "4:12"
+				},
+				{
+					"id": 732851,
+					"artist": "America",
+					"title": "Lonely People",
+					"audio": "https://cdns-preview-d.dzcdn.net/stream/c-d9819b7fee739acd82a06641815c90ac-10.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/7f8c81e6882f107c6fce6bbb9079d781/500x500-000000-80-0-0.jpg",
+					"duration": "2:30"
+				},
+				{
+					"id": 1988270837,
+					"artist": "Rihanna",
+					"title": "Lift Me Up",
+					"audio": "https://cdns-preview-0.dzcdn.net/stream/c-0c43e5237f9b36b0dad5f96e894af372-4.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/99a8eb360d6b04b1f9b8c205c22ae88d/500x500-000000-80-0-0.jpg",
+					"duration": "3:16"
+				},
+				{
+					"id": 925106,
+					"artist": "Rihanna",
+					"title": "Umbrella",
+					"audio": "https://cdns-preview-3.dzcdn.net/stream/c-3b1142ec5a98567c5d286a9050a85d1e-6.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/91276466fbc876d96be9e6926060af60/500x500-000000-80-0-0.jpg",
+					"duration": "4:35"
+				},
+				{
+					"id": 14525573,
+					"artist": "Rihanna",
+					"title": "Where Have You Been",
+					"audio": "https://cdns-preview-7.dzcdn.net/stream/c-70eb82ab241f9ed6f5a22ed1fa958ad3-9.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/5199f89d5113a83b5086463d5d0c9415/500x500-000000-80-0-0.jpg",
+					"duration": "4:02"
+				},
+				{
+					"id": 2485118,
+					"artist": "Beyonc\u00e9",
+					"title": "Single Ladies (Put a Ring on It)",
+					"audio": "https://cdns-preview-b.dzcdn.net/stream/c-b844f52cb55a5d993a3daf4be4b0d069-5.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/1f0450a010b5a825194d7ca00b3067ab/500x500-000000-80-0-0.jpg",
+					"duration": "3:13"
+				}
+			]
+		},
+		{
+			"id": "5",
+			"title": "Cartman Playlist",
+			"cover": "https://e-cdns-images.dzcdn.net/images/cover/90758014c42242478ba9a7a6e33dcff5/500x500-000000-80-0-0.jpg",
+			"info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo non dolore neque doloremque, repudiandae sunt, vero excepturi possimus deserunt aliquid dignissimos, ex fuga aperiam tempora saepe. Soluta voluptas assumenda reprehenderit!",
+			"files": [
+				{
+					"id": 116348734,
+					"artist": "The Beatles",
+					"title": "All You Need Is Love",
+					"audio": "https://cdns-preview-2.dzcdn.net/stream/c-2cbea4cbaf6cc54b8bd66dcaaa2b59c9-7.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/c105ffd0f6855c565cd3a0be47a1ee31/500x500-000000-80-0-0.jpg",
+					"duration": "3:51"
+				},
+				{
+					"id": 116348624,
+					"artist": "The Beatles",
+					"title": "Penny Lane",
+					"audio": "https://cdns-preview-e.dzcdn.net/stream/c-e3ace3b99555b4a5383102d86012cbdf-8.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/c65b3bd84e81056e060be144381c06c8/500x500-000000-80-0-0.jpg",
+					"duration": "3:00"
+				},
+				{
+					"id": 729597952,
+					"artist": "America",
+					"title": "You Can Do Magic",
+					"audio": "https://cdns-preview-a.dzcdn.net/stream/c-a6e6f2155c8b43d92f4f77e64b6a7d5b-6.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/53ef91a1552643a512958611c37d01cc/500x500-000000-80-0-0.jpg",
+					"duration": "3:55"
+				},
+				{
+					"id": 727754,
+					"artist": "America",
+					"title": "Tin Man",
+					"audio": "https://cdns-preview-8.dzcdn.net/stream/c-8cf70863a2ca09279ad60123155ab738-8.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/90758014c42242478ba9a7a6e33dcff5/500x500-000000-80-0-0.jpg",
+					"duration": "3:29"
+				},
+				{
+					"id": 727738,
+					"artist": "America",
+					"title": "Don't Cross the River",
+					"audio": "https://cdns-preview-d.dzcdn.net/stream/c-d94c0dcdb37faf69bf7faad789f14f76-8.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/90758014c42242478ba9a7a6e33dcff5/500x500-000000-80-0-0.jpg",
+					"duration": "2:29"
+				},
+				{
+					"id": 13529563,
+					"artist": "Rihanna",
+					"title": "Only Girl (In The World)",
+					"audio": "https://cdns-preview-d.dzcdn.net/stream/c-d20ea30267f84d42b66c6aa61c3aa43c-10.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/3a12c64bb52a167944783878ffe41f02/500x500-000000-80-0-0.jpg",
+					"duration": "3:55"
+				},
+				{
+					"id": 14525573,
+					"artist": "Rihanna",
+					"title": "Where Have You Been",
+					"audio": "https://cdns-preview-7.dzcdn.net/stream/c-70eb82ab241f9ed6f5a22ed1fa958ad3-9.mp3",
+					"cover": "https://e-cdns-images.dzcdn.net/images/cover/5199f89d5113a83b5086463d5d0c9415/500x500-000000-80-0-0.jpg",
+					"duration": "4:02"
+				}
+			]
+		}
+	]
+}

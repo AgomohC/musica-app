@@ -4,8 +4,12 @@
 .search {
 	@include flex(row, center, flex-start, 1.375rem);
 	position: relative;
-	width: 100%;
-	height: 1.125px;
+	width: min(75%, 400px);
+	height: 2.25rem;
+	padding: 1rem;
+	background: $background-color-drk;
+	border-radius: 9999px;
+
 	@include mobile {
 		display: none;
 	}
@@ -17,7 +21,7 @@
 		&::placeholder {
 			font-weight: 600;
 			font-size: 0.875rem;
-			line-height: 1.125px;
+			line-height: 1.125rem;
 			color: rgba($white-color, 0.25);
 		}
 	}

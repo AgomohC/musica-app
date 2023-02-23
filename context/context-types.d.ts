@@ -1,6 +1,6 @@
 import { ACTIONS } from "./actions"
 export type Track = {
-	id: string
+	id: string | number
 	artist: string
 	duration: string
 	title: string
@@ -8,7 +8,7 @@ export type Track = {
 	audio: string
 }
 export type Playlist = {
-	id: string
+	id: string | number
 	title: string
 	cover: string
 	info: string
