@@ -1,0 +1,59 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixin";
+
+.track {
+	width: 100%;
+	background: rgba(51, 55, 59, 0.37);
+	backdrop-filter: blur(8px);
+	border-radius: 0.9375rem;
+	padding: 0.625rem;
+	padding-right: 1.25rem;
+	@include flex(row, center, space-between, 0);
+	&__imgCont {
+		@include flex(row, center, flex-start, 1.125rem);
+		margin-right: 0.875rem;
+		svg {
+			@include md-screen {
+				display: none;
+			}
+		}
+	}
+	&__img {
+		height: 2.5rem;
+		width: 2.5rem;
+		aspect-ratio: 1/1;
+		border-radius: 8.53125px;
+	}
+	&__imgHeart {
+		fill: transparent;
+		cursor: pointer;
+	}
+	&__infoCont {
+		@include flex(row, center, space-between, 0);
+		width: 80%;
+		@include md-screen {
+			width: 100%;
+		}
+	}
+	&__info {
+		@include flex(row, center, space-between, 0);
+		width: 40%;
+		@include md-screen {
+			width: 100%;
+		}
+		h6 {
+			font-weight: 400;
+			font-size: 0.75rem;
+			line-height: 0.875rem;
+			color: $white-color;
+			// white-space: nowrap;
+		}
+		&:last-child {
+			flex-direction: column-reverse;
+			align-items: flex-end;
+		}
+		@include md-screen {
+			@include flex(column, flex-start, flex-start, 0.375rem);
+		}
+	}
+}

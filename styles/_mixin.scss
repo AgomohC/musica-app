@@ -12,7 +12,7 @@
 	}
 }
 @mixin tablet {
-	@media screen and (min-width: $tablet-screen) {
+	@media screen and (min-width: calc($tablet-screen + 1px)) {
 		@content;
 	}
 }

@@ -12,6 +12,7 @@ const initialState: initialAppState = {
 	all_playlists: info.playlist,
 	all_new_tracks: info.new,
 	all_popular_tracks: info.popular,
+	current_playlist: null,
 }
 export const AppContext = createContext<{
 	state: initialAppState

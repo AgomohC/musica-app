@@ -1,0 +1,94 @@
+@import "../../styles/variables";
+@import "../../styles/mixin";
+
+.view {
+	// position: relative;
+	// &::after {
+	// 	position: absolute;
+	// 	min-height: 100vh;
+	// 	min-width: 100vw;
+	// 	background: red;
+	// 	z-index: 999;
+	// 	content: "";
+	// }
+	// background: red;
+	padding-top: 2rem;
+	@include flex(column, flex-start, flex-start, 3.125rem);
+	@include md-screen {
+		gap: 1.5625rem;
+	}
+	@include tablet {
+		padding-left: 2rem;
+	}
+	&__head {
+		@include flex(row, flex-end, flex-start, 1.75rem);
+		@include md-screen {
+			@include flex(column, flex-start, flex-start, 1.5625rem);
+		}
+	}
+	&__headImg {
+		width: 17.75rem;
+		height: 17.75rem;
+		border-radius: 35.1703px;
+		img {
+			width: 17.75rem;
+			height: 17.75rem;
+			border-radius: 35.1703px;
+		}
+		@include md-screen {
+			width: 100%;
+			aspect-ratio: 1/1;
+			height: auto;
+			img {
+				width: 100%;
+				aspect-ratio: 1/1;
+				height: auto;
+			}
+		}
+	}
+	&__headInfo {
+		@include flex(column, flex-start, flex-start, 2.5rem);
+		@include md-screen {
+			gap: 1.25rem;
+		}
+	}
+	&__headInfoText {
+		@include flex(column, flex-start, flex-start, 0.5rem);
+		h3 {
+			font-weight: 700;
+			font-size: 2.1875rem;
+			line-height: 2.625rem;
+			color: $tertiary-color;
+		}
+		h4,
+		h6 {
+			font-size: 0.875rem;
+			line-height: 1.25rem;
+			color: $grey-color;
+			font-weight: 400;
+			width: min(100%, 31.25rem);
+		}
+	}
+	&__headControls {
+		@include flex(row, flex-start, flex-start, 0.5rem);
+		flex-wrap: wrap;
+		span {
+			@include flex(row, center, flex-start, 0.625rem);
+			padding: 0.625rem 1rem;
+			background: rgba($black-color, 0.07);
+			backdrop-filter: blur(8px);
+			border-radius: 2rem;
+			&:last-child {
+				padding: 0.625rem;
+				border-radius: 100%;
+			}
+		}
+	}
+	&__headControlHeart {
+		fill: transparent;
+	}
+	&__body {
+		@include flex(column, flex-start, flex-start, 0.625rem);
+		width: 100%;
+	}
+}

@@ -19,6 +19,22 @@ export const AppReducer = (
 			newState.isSideBarOpen = !state.isSideBarOpen
 			return newState
 		}
+		case ACTIONS.clear_current_playlist: {
+			const newState = structuredClone(state)
+			newState.current_playlist = null
+			return newState
+		}
+		case ACTIONS.get_single_playlist: {
+			const newState = structuredClone(state)
+
+			const current_playlist = newState.all_playlists.find(
+				playlist => String(playlist.id) == String(action.payload)
+			)
+			if (current_playlist) {
+				newState.current_playlist = current_playlist
+			}
+			return newState
+		}
 		default:
 			return state
 	}
