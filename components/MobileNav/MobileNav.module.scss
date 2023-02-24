@@ -10,8 +10,6 @@
 	z-index: 12;
 	width: 100%;
 	background: $background-color-drk;
-	// min-height: 100vh;
-	// height: 100%;
 	@include tablet {
 		display: none;
 		transform: translateX(-100%);

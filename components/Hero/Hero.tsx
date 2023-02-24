@@ -4,19 +4,18 @@ import Image from "next/image"
 import banner from "/public/HeroSection.png"
 import bannerMobile from "/public/HeroSectionMobile.png"
 import Heart from "/public/icons/Heart.svg"
-import { useLocalContext } from "../../context/AppContext"
 import { totalTimeString } from "../../helpers/add-time"
 import Link from "next/link"
+import { Playlist, Track } from "../../context/context-types"
 
 interface IPropTypes {
 	className?: string
+	playlist: Playlist[]
+	new_t: Track[]
+	popular: Track[]
 }
 
-const Hero = ({ className }: IPropTypes) => {
-	const {
-		state: { all_new_tracks, all_playlists, all_popular_tracks },
-	} = useLocalContext()
-
+const Hero = ({ className, playlist, new_t, popular }: IPropTypes) => {
 	const clsx = classNames(className, classes.hero)
 
 	return (
@@ -37,10 +36,10 @@ const Hero = ({ className }: IPropTypes) => {
 				<div className={classes.banner__chartCont}>
 					<h2 className={classes.banner__chartHead}>Top Charts</h2>
 					<div className={classes.banner__chart}>
-						{all_playlists?.length === 0 ? (
+						{playlist?.length === 0 ? (
 							<h4>No results</h4>
 						) : (
-							all_playlists?.map(item => {
+							playlist?.map(item => {
 								const times = item.files.map(file => file.duration)
 								const total = totalTimeString(times)
 								const artist = item.title.replace(" Playlist", "")
@@ -57,6 +56,7 @@ const Hero = ({ className }: IPropTypes) => {
 													height={63}
 													width={63}
 													className={classes.banner__playlistImg}
+													loading='eager'
 												/>
 											</div>
 											<div className={classes.banner__playlistInfo}>
@@ -80,10 +80,10 @@ const Hero = ({ className }: IPropTypes) => {
 			<article className={classes.tracks}>
 				<h3>New Releases.</h3>
 				<div className={classes.trackCont}>
-					{all_new_tracks?.length == 0 ? (
+					{new_t?.length == 0 ? (
 						<h4>No results</h4>
 					) : (
-						all_new_tracks?.map(t => {
+						new_t?.map(t => {
 							return (
 								<div
 									key={t.id}
@@ -96,6 +96,7 @@ const Hero = ({ className }: IPropTypes) => {
 											height={153}
 											alt={t.title}
 											className={classes.trackCard__img}
+											loading='eager'
 										/>
 									</div>
 									<div className={classes.trackCard__info}>
@@ -111,10 +112,10 @@ const Hero = ({ className }: IPropTypes) => {
 			<article className={classes.tracks}>
 				<h3>Popular in your area.</h3>
 				<div className={classes.trackCont}>
-					{all_popular_tracks?.length == 0 ? (
+					{popular?.length == 0 ? (
 						<h4>No results</h4>
 					) : (
-						all_popular_tracks?.map(t => {
+						popular?.map(t => {
 							return (
 								<div
 									key={t.id}
@@ -127,6 +128,7 @@ const Hero = ({ className }: IPropTypes) => {
 											height={153}
 											alt={t.title}
 											className={classes.trackCard__img}
+											loading='eager'
 										/>
 									</div>
 									<div className={classes.trackCard__info}>

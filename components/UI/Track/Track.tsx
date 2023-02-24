@@ -23,6 +23,7 @@ const Track = ({ className, track, parentPlaylist }: IPropTypes) => {
 					height={80}
 					width={80}
 					className={classes.track__img}
+					loading='eager'
 				/>
 				<Heart className={classes["track__imgHeart"]} />
 			</div>

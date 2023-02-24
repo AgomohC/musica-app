@@ -1,31 +1,44 @@
-import { useRouter } from "next/router"
-import { useEffect } from "react"
-import { ACTIONS } from "../../context/actions"
-import { useLocalContext } from "../../context/AppContext"
 import PlaylistView from "../../components/PlaylistView/PlaylistView"
+import { GetStaticPaths, GetStaticProps } from "next"
+import { getSinglePlaylist, getAllPlaylist } from "../../utils/utils"
+import { Playlist } from "../../context/context-types"
+import Head from "next/head"
 
-const PlayList = () => {
-	const {
-		dispatch,
-		state: { current_playlist },
-	} = useLocalContext()
-	const {
-		query: { id },
-	} = useRouter()
+interface IProps {
+	playlist: Playlist
+}
 
-	useEffect(() => {
-		if (!id) {
-			return
-		}
-
-		dispatch({ type: ACTIONS.get_single_playlist, payload: id as string })
-		return () => dispatch({ type: ACTIONS.clear_current_playlist })
-		// eslint-disable-next-line react-hooks/exhaustive-deps
-	}, [id])
-
+const PlayList = ({ playlist }: IProps) => {
 	return (
-		<>{current_playlist ? <PlaylistView playlist={current_playlist} /> : <h2>Not Found</h2>}</>
+		<>
+			<Head>
+				<title>{playlist.title}</title>
+				<meta
+					name='description'
+					content={`A playlist by ${playlist.title}. ${playlist.info}`}
+				/>
+			</Head>
+			{playlist ? <PlaylistView playlist={playlist} /> : <h2>Not Found</h2>}
+		</>
 	)
+}
+
+export const getStaticProps: GetStaticProps<{ playlist: Playlist | undefined }> = context => {
+	const { params } = context
+	return { props: { playlist: getSinglePlaylist(params?.id as string) } }
+}
+
+export const getStaticPaths: GetStaticPaths = () => {
+	const ids = getAllPlaylist().map(playlist => ({
+		params: {
+			id: String(playlist.id),
+		},
+	}))
+
+	return {
+		paths: ids,
+		fallback: false,
+	}
 }
 
 export default PlayList

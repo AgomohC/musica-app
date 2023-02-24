@@ -17,7 +17,6 @@ const PlaylistView = ({ className, playlist }: IPropTypes) => {
 	const { title, cover, files, info } = playlist
 	const times = files.map(file => file.duration)
 	const duration = totalTimeString(times)
-	// console.log(cover)
 
 	return (
 		<section className={clsx}>
@@ -28,6 +27,7 @@ const PlaylistView = ({ className, playlist }: IPropTypes) => {
 						alt={title}
 						width={500}
 						height={500}
+						loading='eager'
 					/>
 				</div>
 				<div className={classes.view__headInfo}>

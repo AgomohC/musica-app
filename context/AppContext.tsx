@@ -4,15 +4,7 @@ import { initialAppState, ActionPayload, ActionCreator } from "./context-types"
 import info from "../public/assets.json"
 
 const initialState: initialAppState = {
-	pending: false,
-	error: false,
-	error_message: "",
 	isSideBarOpen: false,
-	isSearchModalOpen: false,
-	all_playlists: info.playlist,
-	all_new_tracks: info.new,
-	all_popular_tracks: info.popular,
-	current_playlist: null,
 }
 export const AppContext = createContext<{
 	state: initialAppState
