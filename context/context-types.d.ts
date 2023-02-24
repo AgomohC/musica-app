@@ -17,10 +17,13 @@ export type Playlist = {
 
 export type ActionPayload = {
 	[ACTIONS.toggle_sidebar]: undefined
-	[ACTIONS.clear_current_playlist]: undefined
+	[ACTIONS.add_to_collection]: Playlist
+	[ACTIONS.remove_from_collection]: Playlist
+	[ACTIONS.set_collection_state]: Playlist[]
 }
 export type initialAppState = {
 	isSideBarOpen: boolean
+	collections: Playlist[]
 }
 export type ActionCreator<T extends { [index: string]: any }> = {
 	[Key in keyof T]: T[Key] extends undefined

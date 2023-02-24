@@ -1,10 +1,12 @@
 import { useContext, useReducer, createContext, Dispatch } from "react"
 import { AppReducer } from "./AppReducer"
-import { initialAppState, ActionPayload, ActionCreator } from "./context-types"
-import info from "../public/assets.json"
+import { initialAppState, ActionPayload, ActionCreator, Playlist } from "./context-types"
+import { useEffect } from "react"
+import { ACTIONS } from "./actions"
 
 const initialState: initialAppState = {
 	isSideBarOpen: false,
+	collections: [],
 }
 export const AppContext = createContext<{
 	state: initialAppState
@@ -16,7 +18,12 @@ export const AppContext = createContext<{
 
 export const AppProvider = ({ children }: { children: JSX.Element | JSX.Element[] }) => {
 	const [state, dispatch] = useReducer(AppReducer, initialState)
-
+	useEffect(() => {
+		let result = localStorage.getItem("collections")
+		if (result) {
+			dispatch({ type: ACTIONS.set_collection_state, payload: JSON.parse(result) })
+		}
+	}, [])
 	return <AppContext.Provider value={{ state, dispatch }}>{children}</AppContext.Provider>
 }
 
