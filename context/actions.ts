@@ -1,6 +1,6 @@
 export enum ACTIONS {
 	toggle_sidebar = "TOGGLE_SIDEBAR",
-	add_to_collection = "ADD_TO_COLLECTION",
-	remove_from_collection = "REMOVE_FROM_COLLECTION",
-	set_collection_state = "SET_cOLLECTION_STATE",
+	add_to_likes = "ADD_TO_LIKES",
+	remove_from_likes = "REMOVE_FROM_LIKES",
+	set_likes_state = "SET_cOLLECTION_LIKES",
 }

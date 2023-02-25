@@ -25,29 +25,31 @@ export const AppReducer = (
 			newState.isSideBarOpen = !state.isSideBarOpen
 			return newState
 		}
-		case ACTIONS.set_collection_state: {
+		case ACTIONS.set_likes_state: {
 			const newState = structuredClone(state)
-			newState.collections = action.payload
+			newState.likes = action.payload
 			return newState
 		}
-		case ACTIONS.add_to_collection: {
-			// let collections = read<Playlist[]>("collections")
-			// if (collections) {
-			// 	collections = [...collections, action.payload]
-			// 	write("collections", collections)
-			// 	return { ...state, collections }
-			// }
-			// return { ...state }
+		case ACTIONS.add_to_likes: {
+			let likes = read<Playlist[]>("likes")
+			if (likes) {
+				likes = [...likes, action.payload]
+				write("likes", likes)
+				return { ...state, likes }
+			} else {
+				write("likes", JSON.stringify([action.payload]))
+			}
+			return { ...state, likes: [action.payload] }
 		}
-		case ACTIONS.remove_from_collection: {
-			// let collections = read<Playlist[]>("collections")
-			// if (collections) {
-			// 	const item = collections.findIndex(p => String(p.id) === String(action.payload.id))
-			// 	const new_c = [...collections.slice(0, item), ...collections.slice(item + 1)]
-			// 	write("collections", new_c)
-			// 	return { ...state, collections: new_c }
-			// }
-			// return { ...state }
+		case ACTIONS.remove_from_likes: {
+			let likes = read<Playlist[]>("likes")
+			if (likes) {
+				const item = likes.findIndex(p => String(p.id) === String(action.payload.id))
+				const new_c = [...likes.slice(0, item), ...likes.slice(item + 1)]
+				write("likes", new_c)
+				return { ...state, likes: new_c }
+			}
+			return state
 		}
 		default:
 			return state

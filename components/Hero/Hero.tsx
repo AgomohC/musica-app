@@ -60,7 +60,7 @@ const Hero = ({ className, playlist, new_t, popular }: IPropTypes) => {
 												/>
 											</div>
 											<div className={classes.banner__playlistInfo}>
-												<Link href={`/playlists/${item.id}`}>
+												<Link href={`/collections/${item.id}`}>
 													<h6>{item.title}</h6>
 												</Link>
 												<p>{artist}</p>

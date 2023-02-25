@@ -6,8 +6,19 @@
 	flex-direction: $direction;
 	gap: $gap;
 }
+@mixin mobile-to-tablet {
+	@media screen and (min-width: $mobile-screen) and (max-width: $tablet-screen) {
+		@content;
+	}
+}
+@mixin large-mobile-to-tablet {
+	@media screen and (min-width: 500px) and (max-width: $tablet-screen) {
+		@content;
+	}
+}
+
 @mixin mobile {
-	@media screen and (max-width: $tablet-screen) {
+	@media screen and (max-width: calc($tablet-screen + 1px)) {
 		@content;
 	}
 }
