@@ -86,6 +86,7 @@
 	}
 	&__headControlHeart {
 		fill: transparent;
+		cursor: pointer;
 	}
 	&__body {
 		@include flex(column, flex-start, flex-start, 0.625rem);

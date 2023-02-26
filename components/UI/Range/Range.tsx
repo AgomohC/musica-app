@@ -5,9 +5,10 @@ interface IPropTypes {
 	className?: string
 	onChange: React.ChangeEventHandler
 	value: number
+	type?: "volume"
 }
 
-const Range = ({ className, onChange, value }: IPropTypes) => {
+const Range = ({ className, onChange, value, type }: IPropTypes) => {
 	const clsx = classNames(className, classes.rangeCont)
 	const handleChange = (e: React.ChangeEvent) => {
 		onChange(e)
@@ -21,7 +22,7 @@ const Range = ({ className, onChange, value }: IPropTypes) => {
 					style={{ width: `${value}%` }}
 				></div>
 				<span
-					className={classes.range__thumb}
+					className={type ? classes.range__thumbVolume : classes.range__thumb}
 					style={{ left: `calc(${value}% - 4px)` }}
 				></span>
 			</div>

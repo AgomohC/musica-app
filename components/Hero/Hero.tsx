@@ -7,7 +7,10 @@ import Heart from "/public/icons/Heart.svg"
 import { totalTimeString } from "../../helpers/add-time"
 import Link from "next/link"
 import { Playlist, Track } from "../../context/context-types"
-
+import { useLocalContext } from "../../context/AppContext"
+import HeartFilled from "/public/icons/HeartSelected.svg"
+import { ACTIONS } from "../../context/actions"
+import { useCallback } from "react"
 interface IPropTypes {
 	className?: string
 	playlist: Playlist[]
@@ -17,7 +20,14 @@ interface IPropTypes {
 
 const Hero = ({ className, playlist, new_t, popular }: IPropTypes) => {
 	const clsx = classNames(className, classes.hero)
+	const { state, dispatch } = useLocalContext()
 
+	const isLiked = useCallback(
+		(playlist: Playlist) => {
+			return !!state.likes.find(like => like.id === playlist.id)
+		},
+		[state.likes]
+	)
 	return (
 		<div className={clsx}>
 			<div className={classes.banner}>
@@ -68,7 +78,24 @@ const Hero = ({ className, playlist, new_t, popular }: IPropTypes) => {
 											</div>
 										</div>
 										<div className={classes.banner__playlistIconCont}>
-											<Heart className={classes["banner__playlistIcon"]} />
+											{isLiked(item) ? (
+												<HeartFilled
+													className={classes["banner__playlistIcon"]}
+													onClick={() => {
+														dispatch({
+															type: ACTIONS.remove_from_likes,
+															payload: item,
+														})
+													}}
+												/>
+											) : (
+												<Heart
+													className={classes["banner__playlistIcon"]}
+													onClick={() => {
+														dispatch({ type: ACTIONS.add_to_likes, payload: item })
+													}}
+												/>
+											)}
 										</div>
 									</div>
 								)

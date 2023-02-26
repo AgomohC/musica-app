@@ -127,6 +127,7 @@
 		transition: $basic-transition;
 		transition-duration: 0.5s;
 		opacity: 0;
+		fill: $secondary-color;
 		z-index: 15;
 	}
 }

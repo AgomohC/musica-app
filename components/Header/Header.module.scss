@@ -5,8 +5,8 @@
 	position: fixed;
 	top: 0;
 	height: 4.5625rem;
-	left: calc(6rem + 1px);
-	width: calc(100% - 6rem - 1px);
+	left: calc(6rem);
+	width: calc(100% - 6rem);
 	padding: 0 1.75rem;
 	z-index: 9;
 	background: $background-color-md;

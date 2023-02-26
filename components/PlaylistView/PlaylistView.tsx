@@ -8,6 +8,9 @@ import Collection from "/public/icons/music-square-add.svg"
 import Track from "../UI/Track/Track"
 import Play from "/public/icons/Play.svg"
 import Selected from "/public/icons/HeartSelected.svg"
+import { useLocalContext } from "../../context/AppContext"
+import { useCallback } from "react"
+import { ACTIONS } from "../../context/actions"
 interface IPropTypes {
 	className?: string
 	playlist: Playlist
@@ -17,7 +20,14 @@ const PlaylistView = ({ className, playlist }: IPropTypes) => {
 	const { title, cover, files, info } = playlist
 	const times = files.map(file => file.duration)
 	const duration = totalTimeString(times)
+	const { state, dispatch } = useLocalContext()
 
+	const isLiked = useCallback(
+		(playlist: Playlist) => {
+			return !!state.likes.find(like => like.id === playlist.id)
+		},
+		[state.likes]
+	)
 	return (
 		<section className={clsx}>
 			<div className={classes.view__head}>
@@ -47,8 +57,28 @@ const PlaylistView = ({ className, playlist }: IPropTypes) => {
 							<Collection /> Add to collection
 						</span>
 						<span>
-							<Heart className={classes.view__headControlHeart} />
-							<Selected />
+							{isLiked(playlist) ? (
+								<Selected
+									className={classes.view__headControlHeart}
+									onClick={() => {
+										console.log(1)
+
+										dispatch({
+											type: ACTIONS.remove_from_likes,
+											payload: playlist,
+										})
+									}}
+								/>
+							) : (
+								<Heart
+									className={classes.view__headControlHeart}
+									onClick={() => {
+										console.log(1)
+
+										dispatch({ type: ACTIONS.add_to_likes, payload: playlist })
+									}}
+								/>
+							)}
 						</span>
 					</div>
 				</div>

@@ -20,10 +20,15 @@ export type ActionPayload = {
 	[ACTIONS.add_to_likes]: Playlist
 	[ACTIONS.remove_from_likes]: Playlist
 	[ACTIONS.set_likes_state]: Playlist[]
+	[ACTIONS.add_to_liked_tracks]: Track
+	[ACTIONS.remove_from_liked_tracks]: Track
+	[ACTIONS.set_liked_tracks]: Track[]
 }
 export type initialAppState = {
 	isSideBarOpen: boolean
 	likes: Playlist[]
+	currentTrack: Track | null
+	likedTracks: Track[]
 }
 export type ActionCreator<T extends { [index: string]: any }> = {
 	[Key in keyof T]: T[Key] extends undefined
