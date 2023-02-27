@@ -5,6 +5,8 @@ import { Playlist } from "../../context/context-types"
 import Image from "next/image"
 import PlayFilled from "/public/icons/PlayFilled.svg"
 import { useRouter } from "next/router"
+import { useLocalContext } from "../../context/AppContext"
+import { ACTIONS } from "../../context/actions"
 
 interface IPropTypes {
 	className?: string
@@ -13,14 +15,16 @@ interface IPropTypes {
 
 const Collections = ({ className, playlists }: IPropTypes) => {
 	const clsx = classNames(className, classes.collections)
-	const { pathname } = useRouter()
+	const router = useRouter()
+
+	const { state, dispatch } = useLocalContext()
 	return (
 		<section className={clsx}>
 			<div className={classes.collections__navCont}>
 				<Link
 					href={"/collections"}
 					className={
-						!pathname.includes("/likes")
+						!router.pathname.includes("/likes")
 							? classes["collections__navLink--active"]
 							: classes.collections__navLink
 					}
@@ -30,7 +34,7 @@ const Collections = ({ className, playlists }: IPropTypes) => {
 				<Link
 					href={"/collections/likes"}
 					className={
-						pathname.includes("/likes")
+						router.pathname.includes("/likes")
 							? classes["collections__navLink--active"]
 							: classes.collections__navLink
 					}
@@ -47,7 +51,9 @@ const Collections = ({ className, playlists }: IPropTypes) => {
 							<div
 								key={playlist.id}
 								className={classes.playlist__card}
-								onMouseOut={() => {}}
+								onClick={() => {
+									router.push(`/collections/${playlist.id}`)
+								}}
 							>
 								<Image
 									src={playlist.cover}
@@ -61,7 +67,18 @@ const Collections = ({ className, playlists }: IPropTypes) => {
 									<p>{playlist.title.replace(" Playlist", "")}</p>
 									<p>2.3m likes</p>
 								</div>
-								<PlayFilled className={classes.playlist__cardIcon} />
+								<PlayFilled
+									className={classes.playlist__cardIcon}
+									onClick={(event: MouseEvent) => {
+										event.stopPropagation()
+										dispatch({
+											type: ACTIONS.set_current_track,
+											payload: playlist.files[0],
+										})
+										dispatch({ type: ACTIONS.set_queue, payload: playlist.files })
+										router.push(`/collections/${playlist.id}`)
+									}}
+								/>
 							</div>
 						)
 					})

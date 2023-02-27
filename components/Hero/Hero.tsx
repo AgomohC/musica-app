@@ -115,6 +115,10 @@ const Hero = ({ className, playlist, new_t, popular }: IPropTypes) => {
 								<div
 									key={t.id}
 									className={classes.trackCard}
+									onClick={() => {
+										dispatch({ type: ACTIONS.set_queue, payload: new_t })
+										dispatch({ type: ACTIONS.set_current_track, payload: t })
+									}}
 								>
 									<div className={classes.trackCard__img}>
 										<Image
@@ -147,6 +151,10 @@ const Hero = ({ className, playlist, new_t, popular }: IPropTypes) => {
 								<div
 									key={t.id}
 									className={classes.trackCard}
+									onClick={() => {
+										dispatch({ type: ACTIONS.set_queue, payload: popular })
+										dispatch({ type: ACTIONS.set_current_track, payload: t })
+									}}
 								>
 									<div className={classes.trackCard__img}>
 										<Image

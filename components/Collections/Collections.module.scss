@@ -3,7 +3,7 @@
 
 .collections {
 	@include flex(column, flex-start, flex-start, 2.5rem);
-	padding-top: 2rem;
+	padding: 2rem 0;
 	&__navCont {
 		width: 400px;
 		@include flex(row, flex-start, flex-start, 0.625rem);
@@ -54,6 +54,7 @@
 		grid-template-columns: 1fr 1fr;
 	}
 	&__card {
+		cursor: pointer;
 		width: 100%;
 		height: auto;
 		border-radius: 1.25rem;

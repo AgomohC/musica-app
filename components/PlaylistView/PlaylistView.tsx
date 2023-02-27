@@ -49,7 +49,12 @@ const PlaylistView = ({ className, playlist }: IPropTypes) => {
 						</h6>
 					</div>
 					<div className={classes.view__headControls}>
-						<span>
+						<span
+							onClick={() => {
+								dispatch({ type: ACTIONS.set_current_track, payload: playlist.files[0] })
+								dispatch({ type: ACTIONS.set_queue, payload: playlist.files })
+							}}
+						>
 							<Play />
 							Play all
 						</span>
@@ -61,8 +66,6 @@ const PlaylistView = ({ className, playlist }: IPropTypes) => {
 								<Selected
 									className={classes.view__headControlHeart}
 									onClick={() => {
-										console.log(1)
-
 										dispatch({
 											type: ACTIONS.remove_from_likes,
 											payload: playlist,
@@ -73,8 +76,6 @@ const PlaylistView = ({ className, playlist }: IPropTypes) => {
 								<Heart
 									className={classes.view__headControlHeart}
 									onClick={() => {
-										console.log(1)
-
 										dispatch({ type: ACTIONS.add_to_likes, payload: playlist })
 									}}
 								/>
@@ -89,7 +90,7 @@ const PlaylistView = ({ className, playlist }: IPropTypes) => {
 						<Track
 							key={file.id}
 							track={file}
-							parentPlaylist={playlist.title}
+							parentPlaylist={playlist}
 						/>
 					)
 				})}

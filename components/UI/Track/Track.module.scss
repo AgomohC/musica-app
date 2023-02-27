@@ -8,6 +8,7 @@
 	border-radius: 0.9375rem;
 	padding: 0.625rem;
 	padding-right: 1.25rem;
+	cursor: pointer;
 	@include flex(row, center, space-between, 0);
 	&__imgCont {
 		@include flex(row, center, flex-start, 1.125rem);
@@ -51,6 +52,12 @@
 			font-size: 0.75rem;
 			line-height: 0.875rem;
 			color: $white-color;
+		}
+		&--active {
+			@extend .track__info;
+			h6 {
+				color: $secondary-color;
+			}
 		}
 		@include md-screen {
 			@include flex(column, flex-start, flex-start, 0.375rem);

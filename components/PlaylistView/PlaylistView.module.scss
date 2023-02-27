@@ -2,17 +2,7 @@
 @import "../../styles/mixin";
 
 .view {
-	// position: relative;
-	// &::after {
-	// 	position: absolute;
-	// 	min-height: 100vh;
-	// 	min-width: 100vw;
-	// 	background: red;
-	// 	z-index: 999;
-	// 	content: "";
-	// }
-	// background: red;
-	padding-top: 2rem;
+	padding: 2rem 0;
 	@include flex(column, flex-start, flex-start, 3.125rem);
 	@include md-screen {
 		gap: 1.5625rem;
@@ -72,6 +62,7 @@
 	&__headControls {
 		@include flex(row, flex-start, flex-start, 0.5rem);
 		flex-wrap: wrap;
+		cursor: pointer;
 		span {
 			@include flex(row, center, flex-start, 0.625rem);
 			padding: 0.625rem 1rem;
