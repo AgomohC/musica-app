@@ -1,33 +1,41 @@
 import classes from "./Range.module.scss"
 import classNames from "classnames"
+import { forwardRef } from "react"
 
 interface IPropTypes {
 	className?: string
-	onChange: React.ChangeEventHandler
+	onChange: React.ChangeEventHandler<HTMLInputElement>
 	value: number
-	type?: "volume"
+	min: number
+	max: number
 }
 
-const Range = ({ className, onChange, value, type }: IPropTypes) => {
-	const clsx = classNames(className, classes.rangeCont)
-	const handleChange = (e: React.ChangeEvent) => {
-		onChange(e)
-	}
+const Range = forwardRef<HTMLDivElement, IPropTypes>(function (
+	{ className, onChange, value, min, max },
+	ref
+) {
+	const clsx = classNames(className, classes.range)
+	var FIREFOX = /Firefox/i.test(navigator.userAgent)
 
 	return (
 		<div className={clsx}>
-			<div className={classes.range}>
-				<div
-					className={classes.range__indicator}
-					style={{ width: `${value}%` }}
-				></div>
-				<span
-					className={type ? classes.range__thumbVolume : classes.range__thumb}
-					style={{ left: `calc(${value}% - 4px)` }}
-				></span>
-			</div>
+			<div
+				style={{
+					width: `${(value / max) * 100}%`,
+					display: `${FIREFOX ? "none" : "block"}`,
+				}}
+				className={classes.range__indicator}
+			></div>
+			<input
+				type='range'
+				className={classes.r}
+				value={value}
+				min={min}
+				max={max}
+				onChange={onChange}
+			/>
 		</div>
 	)
-}
-
+})
+Range.displayName = "Range"
 export default Range

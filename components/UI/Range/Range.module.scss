@@ -1,67 +1,78 @@
 @import "../../../styles/variables";
 @import "../../../styles/mixin";
 
-.rangeCont {
-	width: 100%;
-}
 .range {
-	cursor: pointer;
-	position: relative;
-	z-index: 20;
-	height: 0.25rem;
-	border-radius: 3.125rem;
 	width: 100%;
+	height: 0.25rem;
+	@include flex(row, center, center, 0);
+	position: relative;
 	background: rgba($black-color, 0.1);
-	&:hover .range__thumbVolume {
-		opacity: 1;
-	}
+	border-radius: 3.125rem;
+	z-index: 40;
 	&__indicator {
-		background: $secondary-color;
-		z-index: 20;
 		position: absolute;
 		top: 0;
 		left: 0;
-		height: 100%;
-		border-radius: 3.125rem;
-		cursor: pointer;
-
-		&:hover ~ .range__thumbVolume {
-			opacity: 1;
-		}
-	}
-	&__thumb {
-		position: absolute;
-		border-radius: 50%;
 		background: $secondary-color;
-		position: relative;
-		height: 0.5rem;
-		width: 0.5rem;
-		position: relative;
-		display: block;
-		bottom: 50%;
-		z-index: 31;
-		box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.92);
-		cursor: pointer;
-		&::after {
-			position: absolute;
-			top: -25%;
-			left: -25%;
-			content: "";
-			border: 1px solid $white-color;
-			border-radius: 50%;
-			background-color: transparent;
-			cursor: pointer;
-			height: 0.75rem;
-			width: 0.75rem;
-			z-index: 30;
+		height: 0.25rem;
+		display: none;
+		border-radius: 3.125rem;
+		:not(*:root) {
+			display: block;
 		}
 	}
-	&__thumbVolume {
-		@extend .range__thumb;
-		transition: $basic-transition;
-		opacity: 0;
-		&:hover {
-			opacity: 1;
-		}
+}
+.r {
+	cursor: pointer;
+	-webkit-appearance: none;
+	appearance: none;
+	position: relative;
+
+	&::-webkit-slider-runnable-track {
+		-webkit-appearance: none;
+		appearance: none;
+		width: 33%;
+		background: transparent;
+
+		height: 0.25rem;
+		border-radius: 3.125rem;
+		z-index: 41;
+	}
+
+	&::-webkit-slider-thumb {
+		background: $secondary-color;
+		-webkit-appearance: none;
+		box-sizing: content-box;
+		height: 0.75rem;
+		width: 0.75rem;
+		border-radius: 50%;
+		margin-top: -0.25rem;
+		cursor: pointer;
+		box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.92);
+		outline: none;
+		opacity: 1;
+	}
+	&::-moz-range-track {
+		height: 0.25rem;
+		border-radius: 3.125rem;
+		width: 100%;
+		background: transparent;
+	}
+
+	&::-moz-range-thumb {
+		border: none;
+		outline: none;
+		height: 0.75rem;
+		width: 0.75rem;
+		border-radius: 50%;
+		cursor: pointer;
+		margin-top: -0.125rem;
+		background: $secondary-color;
+		box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.92);
+		opacity: 1;
+	}
+	&::-moz-range-progress {
+		background: $secondary-color;
+		border-radius: 3.125rem;
 	}
 }
