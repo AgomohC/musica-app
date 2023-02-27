@@ -1,6 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap");
+
 @import "../../styles/variables";
 @import "../../styles/mixin";
 
+.toast {
+	font-family: "Quicksand", sans-serif;
+	font-weight: 700;
+}
 .footer {
 	transition: all 0.3s cubic-bezier(0.87, 0, 0.13, 1) 0s;
 	position: fixed;
@@ -12,6 +18,10 @@
 	-webkit-backdrop-filter: blur(10px);
 	z-index: 10;
 	padding: 2rem 6rem;
+	&--show {
+		bottom: 0;
+		@extend .footer;
+	}
 
 	&::after {
 		content: "";
@@ -37,7 +47,7 @@
 		position: relative;
 		z-index: 12;
 		@include flex(row, center, flex-start, 0.75rem);
-		flex: 1;
+		flex: 2;
 		img {
 			height: 3rem;
 			width: 3rem;
@@ -104,6 +114,10 @@
 		background: $secondary-color;
 		height: 1.75rem;
 		width: 1.75rem;
+	}
+	&__pauseIcon {
+		height: 0.75rem;
+		width: 0.75rem;
 	}
 	&__progress {
 		@include mobile {
