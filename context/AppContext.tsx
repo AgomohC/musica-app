@@ -8,14 +8,8 @@ const initialState: initialAppState = {
 	isSideBarOpen: false,
 	likes: [],
 	likedTracks: [],
-	currentTrack: {
-		id: 116348656,
-		artist: "The Beatles",
-		title: "Let It Be",
-		audio: "https://cdns-preview-e.dzcdn.net/stream/c-e7e6e2142422aa4599294dee57197be9-13.mp3",
-		cover: "https://e-cdns-images.dzcdn.net/images/cover/fcf05300b7c17ec77a6d01028a4bef61/500x500-000000-80-0-0.jpg",
-		duration: "4:03",
-	},
+	currentTrack: null,
+	queue: [],
 }
 export const AppContext = createContext<{
 	state: initialAppState

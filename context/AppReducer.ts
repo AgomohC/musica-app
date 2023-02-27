@@ -87,6 +87,14 @@ export const AppReducer = (
 			}
 			return state
 		}
+
+		case ACTIONS.set_current_track: {
+			return { ...state, currentTrack: action.payload }
+		}
+
+		case ACTIONS.set_queue: {
+			return { ...state, queue: action.payload }
+		}
 		default:
 			return state
 	}
